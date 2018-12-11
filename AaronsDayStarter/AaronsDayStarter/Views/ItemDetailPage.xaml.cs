@@ -26,8 +26,8 @@ namespace AaronsDayStarter.Views
 
             var item = new Item
             {
-                Text = "Item 1",
-                Description = "This is an item description."
+                Day = "Item 1",
+                Content = "This is an item description."
             };
 
             viewModel = new ItemDetailViewModel(item);

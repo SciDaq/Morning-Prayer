@@ -4,7 +4,88 @@
             xmlns:views="clr-namespace:AaronsDayStarter.Views"
             x:Class="AaronsDayStarter.Views.MainPage">
     <TabbedPage.Children>
-        <NavigationPage Title="Browse">
+
+        <NavigationPage Title="Start" WidthRequest="500">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_feed.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:StartPage />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Song" WidthRequest="500">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_feed.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:Song />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="OT Reading" WidthRequest="500">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_feed.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:OTReading />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Thanksgiving" WidthRequest="500">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_feed.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:Thanksgiving />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Psalm" WidthRequest="500">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_feed.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:Psalm />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Hope" WidthRequest="500">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_feed.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:PrayerHope />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="NT Reading" WidthRequest="500">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_feed.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:NTReading />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Silence" WidthRequest="500">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_feed.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:Silence />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Daily" WidthRequest="500">
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="tab_feed.png"/>
@@ -12,6 +93,26 @@
             </NavigationPage.Icon>
             <x:Arguments>
                 <views:ItemsPage />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Others" WidthRequest="500">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_feed.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:Others />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Lord's Prayer" WidthRequest="500">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_feed.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:TheLordsPrayer />
             </x:Arguments>
         </NavigationPage>
         
