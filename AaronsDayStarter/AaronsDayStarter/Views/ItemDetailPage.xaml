@@ -7,7 +7,7 @@
         <StackLayout Spacing="20" Padding="15">
             <Label Text="{Binding Item.Day}" FontSize="Large"/>
             <Label Text="Prayer:" FontSize="Small" />
-            <Label Text="{Binding Item.Content}" FontSize="Medium"/>
+            <Label FormattedText="{Binding Item.Content}"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

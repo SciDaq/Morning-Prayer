@@ -28,14 +28,8 @@
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Padding="10">
-                                <Label Text="{Binding Stage}" 
-                       LineBreakMode="NoWrap" 
-                       Style="{DynamicResource ListItemTextStyle}" 
-                       FontSize="16" />
-                                <Label Text="{Binding Content}" 
-                       LineBreakMode="NoWrap"
-                       Style="{DynamicResource ListItemDetailTextStyle}"
-                       FontSize="13" />
+                                <Label Text="{Binding Stage}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="24" />
+                                <Label FormattedText="{Binding Content}" LineBreakMode="WordWrap" Style="{DynamicResource ListItemDetailTextStyle}" FontSize="18" LineHeight="1" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
