@@ -32,6 +32,9 @@
     <Compile Update="Views\Others.xaml.cs">
       <DependentUpon>Others.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\Doxology.xaml.cs">
+      <DependentUpon>Doxology.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\TheLordsPrayer.xaml.cs">
       <DependentUpon>TheLordsPrayer.xaml</DependentUpon>
     </Compile>

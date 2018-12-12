@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AaronsDayStarter.Views.TheLordsPrayer"
+             x:Class="AaronsDayStarter.Views.Doxology"
              xmlns:vm="clr-namespace:AaronsDayStarter.ViewModels"
              Title="{Binding Stage}">
     <ContentPage.BindingContext>
-        <vm:LordsPrayerViewModel />
+        <vm:DoxologyViewModel />
     </ContentPage.BindingContext>
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -20,13 +20,13 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <ScrollView Grid.Row="0">
-            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+        <ScrollView Grid.Row="0" >
+            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10" >
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="Our Father who art in heaven, hallowed be thy name."  />
+                                <Span Text="Praise God from whom all blessings flow."  />
                                 <Span Text=" " />
                                 
                             </FormattedString.Spans>
@@ -37,7 +37,7 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text=" Thy kingdom come. Thy will be done, on earth as it is in heaven. "  />
+                                <Span Text=" Praise him all creatures here below. "  />
                                 <Span Text=" " />
                                 
                             </FormattedString.Spans>
@@ -49,37 +49,7 @@
                         <FormattedString>
                             <FormattedString.Spans>
                                 <Span Text="" FontAttributes="Bold" />
-                                <Span Text="Give us this day our daily bread;"  />
-                            </FormattedString.Spans>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-                <Label>
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <FormattedString.Spans>
-                                <Span Text="" FontAttributes="Bold" />
-                                <Span Text="and forgive us our trespasses, as we forgive those who trespass against us;  " />
-                            </FormattedString.Spans>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-                <Label>
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <FormattedString.Spans>
-                                <Span Text="" FontAttributes="Bold" />
-                                <Span Text="and lead us not into temptation, but deliver us from evil.  " />
-                            </FormattedString.Spans>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-                <Label>
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <FormattedString.Spans>
-                                <Span Text="" FontAttributes="Bold" />
-                                <Span Text="For yours is the Kingdom, the power and the Glory  " />
+                                <Span Text="Praise Father, Son and Holy Ghost;"  />
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>

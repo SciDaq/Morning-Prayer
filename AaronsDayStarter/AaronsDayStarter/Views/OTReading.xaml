@@ -3,15 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AaronsDayStarter.Views.OTReading"
              xmlns:vm="clr-namespace:AaronsDayStarter.ViewModels"
-             Title="{Binding Title}">
+             Title="{Binding Stage}">
     <ContentPage.BindingContext>
-        <vm:AboutViewModel />
+        <vm:OTReadingViewModel />
     </ContentPage.BindingContext>
     <ContentPage.Resources>
         <ResourceDictionary>
             <!--Page Level Resources: Compatibile with Xamarin Live Player -->
-            <Color x:Key="Primary">#2196F3</Color>
-            <Color x:Key="Accent">#96d1ff</Color>
+            <Color x:Key="Primary">#D13412</Color>
+            <Color x:Key="Accent">#ff96d1</Color>
             <Color x:Key="LightTextColor">#999999</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
@@ -28,7 +28,7 @@
                             <FormattedString.Spans>
                                 <Span Text="Old Testament Reading "  FontAttributes="Bold"/>
                                 <Span Text=" " />
-                                <Span Text="1.0" ForegroundColor="{StaticResource LightTextColor}" />
+                                
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>

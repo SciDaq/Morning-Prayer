@@ -7,6 +7,7 @@ using Xamarin.Forms;
 
 using AaronsDayStarter.Models;
 using AaronsDayStarter.Views;
+using System.Linq;
 
 namespace AaronsDayStarter.ViewModels
 {
@@ -35,12 +36,14 @@ namespace AaronsDayStarter.ViewModels
                 return;
 
             IsBusy = true;
+            String today = DateTime.Now.ToString("dddd");
 
             try
             {
                 Items.Clear();
                 var items = await DataStore.GetItemsAsync(true);
-                foreach (var item in items)
+
+                foreach (var item in items.Where(t => t.Day == today || t.Day == "Every"))
                 {
                     Items.Add(item);
                 }

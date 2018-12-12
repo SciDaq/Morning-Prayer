@@ -2,11 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AaronsDayStarter.Views.ItemDetailPage"
-             Title="{Binding Title}">
-    <StackLayout Spacing="20" Padding="15">
-        <Label Text="Text:" FontSize="Medium" />
-        <Label Text="{Binding Item.Day}" FontSize="Small"/>
-        <Label Text="Description:" FontSize="Medium" />
-        <Label Text="{Binding Item.Content}" FontSize="Small"/>
-    </StackLayout>
+             Title="{Binding Stage}">
+    <ScrollView>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="{Binding Item.Day}" FontSize="Large"/>
+            <Label Text="Prayer:" FontSize="Small" />
+            <Label Text="{Binding Item.Content}" FontSize="Medium"/>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
