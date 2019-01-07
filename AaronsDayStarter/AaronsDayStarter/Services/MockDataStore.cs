@@ -111,6 +111,16 @@ namespace AaronsDayStarter.Services
                     "Praise Him all creatures here below\n\n" +
                     "Priase Him above ye heavenly Hosts\n\n" +
                     "Praise Father, Son and Holy Gost."},
+
+                new Item {Id = Guid.NewGuid().ToString(), Stage="Benediction", Day="Every",
+                    Content ="May the peace of the Lord Christ go with you:\n" +
+                    "wherever He may send you:\n" +
+                    "may he guid you through the wilderness:\n\n" +
+                    "protect you through the storm;\n" +
+                    "may He bring you home rejoycing:\n" +
+                    "at the wonders he has shown you;\n" +
+                    "may he bring you home rejoycing:\n" +
+                    "once again into our doors"},
             };
 
             foreach (var item in mockItems)

@@ -4,64 +4,75 @@
              x:Class="AaronsDayStarter.Views.StartPage"
              xmlns:vm="clr-namespace:AaronsDayStarter.ViewModels"
              Title="{Binding Stage}">
-  <ContentPage.BindingContext>
-    <vm:AboutViewModel />
-  </ContentPage.BindingContext>
-  <ContentPage.Resources>
-    <ResourceDictionary>
-      <!--Page Level Resources: Compatibile with Xamarin Live Player -->
-      <Color x:Key="Primary">#2196F3</Color>
-      <Color x:Key="Accent">#9600ff</Color>
-      <Color x:Key="LightTextColor">#999999</Color>
-    </ResourceDictionary>
-  </ContentPage.Resources>
-  <Grid>
-    <Grid.RowDefinitions>
-      <RowDefinition Height="Auto" />
-      <RowDefinition Height="*" />
-    </Grid.RowDefinitions>
-    <ScrollView Grid.Row="0">
-      <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
-        <Label FontSize="22">
-          <Label.FormattedText>
-            <FormattedString>
-              <FormattedString.Spans>
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!--Page Level Resources: Compatibile with Xamarin Live Player -->
+            <Color x:Key="Primary">#2196F3</Color>
+            <Color x:Key="Accent">#9600ff</Color>
+            <Color x:Key="LightTextColor">#999999</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ScrollView Grid.Row="0">
+            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+                <Label FontSize="Large">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Welcome" 
+                                    FontAttributes="Bold"
+                                    FontSize="Large" />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label FontSize="22">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
                                 <Span Text="O Lord, Let my soul rise up to meet the morning " 
                       FontAttributes="None"
                       FontSize="Medium"/>
                                 <Span Text="as the day rises to meet the sun." 
                       FontAttributes="Bold"
                       FontSize="Medium" />
-              </FormattedString.Spans>
-            </FormattedString>
-          </Label.FormattedText>
-        </Label>
-        <Label FontSize="22">
-          <Label.FormattedText>
-            <FormattedString>
-              <FormattedString.Spans>
-                <Span Text="Glory to the Father, and to the son, and to the Holy Spirit, 
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label FontSize="22">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Glory to the Father, and to the son, and to the Holy Spirit, 
                       as it was in the beginning is now and will be for ever" 
                       FontAttributes="Bold"
                       FontSize="Medium"/>
-                <Span Text=" " />
-              </FormattedString.Spans>
-            </FormattedString>
-          </Label.FormattedText>
-        </Label>
-        <Label FontSize="22">
-          <Label.FormattedText>
-            <FormattedString>
-              <FormattedString.Spans>
-                <Span Text="Come; let us sing to the lord: Let us shout to the Rock of our salvation" 
+                                <Span Text=" " />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label FontSize="22">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Come; let us sing to the lord: Let us shout to the Rock of our salvation" 
                       FontAttributes="None"
                       FontSize="Medium" />
-                <Span Text=" " />
-              </FormattedString.Spans>
-            </FormattedString>
-          </Label.FormattedText>
-        </Label>
-      </StackLayout>
-    </ScrollView>
-  </Grid>
+                                <Span Text=" " />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
 </ContentPage>

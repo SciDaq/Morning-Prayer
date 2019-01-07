@@ -3,9 +3,10 @@
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:views="clr-namespace:AaronsDayStarter.Views"
             x:Class="AaronsDayStarter.Views.MainPage"
-            BarBackgroundColor="#477573">
+            BarBackgroundColor="#F4F5F6"
+            BarTextColor="#124332">
     <TabbedPage.BackgroundColor>
-            <Color>#AFE4DF</Color>
+        <Color>#AFE4DF</Color>
     </TabbedPage.BackgroundColor>
     <TabbedPage.Children>
 
