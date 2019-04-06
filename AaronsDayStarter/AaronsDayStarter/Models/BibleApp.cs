@@ -77,8 +77,9 @@ namespace AaronsDayStarter.Models
             try
             {
                 var message = new HttpRequestMessage(HttpMethod.Post, URL);
+                // adding when I get accesss to a better repo
                 HttpClient httpClient = new HttpClient();
-                var byteArray = Encoding.ASCII.GetBytes("n4sie0lbmxRdmU26SQPGjIUaXZmPDuOlRL7Vg0F6");
+                var byteArray = Encoding.ASCII.GetBytes("");
                 httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("bearer", Convert.ToBase64String(byteArray));
 
 

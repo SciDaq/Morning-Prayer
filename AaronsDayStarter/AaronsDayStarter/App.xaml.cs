@@ -8,7 +8,7 @@ namespace AaronsDayStarter
 {
     public partial class App : Application
     {
-        public String BibleAppKey = "n4sie0lbmxRdmU26SQPGjIUaXZmPDuOlRL7Vg0F6";
+        public String BibleAppKey = "";
         public App()
         {
             InitializeComponent();
