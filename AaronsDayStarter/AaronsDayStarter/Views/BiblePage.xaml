@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:abstractions="clr-namespace:LabelHtml.Forms.Plugin.Abstractions;assembly=HtmlLabel.Forms.Plugin"
+             x:Class="AaronsDayStarter.Views.BiblePage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="60"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0"  
+                       Text="Bible Passage"
+                        VerticalOptions="CenterAndExpand" 
+                        HorizontalOptions="StartAndExpand" />
+                <Picker  Grid.Row="1"  Grid.Column="0"
+                        ItemsSource="{Binding BibleBookList}"
+                        ItemDisplayBinding="{Binding Book}"
+                        SelectedIndexChanged="BookSelectedIndexChanged"
+                        VerticalOptions="StartAndExpand" 
+                        HorizontalOptions="StartAndExpand"
+                        SelectedItem="{Binding BibleBookSelected}"
+                        MinimumWidthRequest="100"
+                        MinimumHeightRequest="40"
+                        Title="Book"
+                        WidthRequest="300"
+                        HeightRequest="95"/>
+                <Picker  Grid.Row="1"  Grid.Column="1"
+                        ItemsSource="{Binding ChapterList}"
+                        SelectedIndexChanged="ChapterFromSelectedIndexChanged"
+                        SelectedIndex="{Binding ChapterFrom}"
+                        VerticalOptions="StartAndExpand" 
+                        HorizontalOptions="StartAndExpand"
+                        MinimumWidthRequest="100"
+                        MinimumHeightRequest="40"
+                        Title="From"
+                        WidthRequest="300"
+                        HeightRequest="95"/>
+                <Picker  Grid.Row="1"  Grid.Column="2"
+                        ItemsSource="{Binding ChapterList}"
+                        SelectedIndex="{Binding ChapterTo}"
+                        SelectedIndexChanged="ChapterToSelectedIndexChanged"
+                        VerticalOptions="StartAndExpand" 
+                        HorizontalOptions="StartAndExpand"
+                        MinimumWidthRequest="100"
+                        MinimumHeightRequest="40"
+                        Title="To"
+                        WidthRequest="300"
+                        HeightRequest="95"/>
+                <Button Grid.Row="1" Grid.Column="3" Text="Go" Command="{Binding FindPassage}" />
+
+                <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4"
+                        FormattedText="{Binding BiblePassages}"
+                        VerticalOptions="StartAndExpand" 
+                        HorizontalOptions="StartAndExpand"
+                        LineHeight="1.6"/>
+                
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

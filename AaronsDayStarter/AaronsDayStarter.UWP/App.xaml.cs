@@ -1,7 +1,9 @@
-﻿using System;
+﻿using LabelHtml.Forms.Plugin.UWP;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -51,8 +53,10 @@ namespace AaronsDayStarter.UWP
                 rootFrame = new Frame();
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
+                var rendererAssemblies = new[] { typeof(HtmlLabelRenderer).GetTypeInfo().Assembly };
+                Xamarin.Forms.Forms.Init(e, rendererAssemblies);
 
-                Xamarin.Forms.Forms.Init(e);
+                HtmlLabelRenderer.Initialize();
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {

@@ -6,8 +6,9 @@
     <ScrollView>
         <StackLayout Spacing="20" Padding="15">
             <Label Text="{Binding Item.Day}" FontSize="Large"/>
-            <Label Text="Prayer:" FontSize="Small" />
+            <Label Text="Prayer:" FontSize="Medium" LineHeight="1.3" />
             <Label FormattedText="{Binding Item.Content}"/>
+            <Button Text="Get Bible" Clicked="Button_Clicked"></Button>
         </StackLayout>
     </ScrollView>
 </ContentPage>

@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using LabelHtml.Forms.Plugin.Droid;
 
 namespace AaronsDayStarter.Droid
 {
@@ -18,6 +19,7 @@ namespace AaronsDayStarter.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(savedInstanceState);
+            HtmlLabelRenderer.Initialize();
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
         }

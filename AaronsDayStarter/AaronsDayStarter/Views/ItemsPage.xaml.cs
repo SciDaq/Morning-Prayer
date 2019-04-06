@@ -30,8 +30,14 @@ namespace AaronsDayStarter.Views
             var item = args.SelectedItem as Item;
             if (item == null)
                 return;
-
-            await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
+            if(item.Stage == "Old Testament")
+                await Navigation.PushAsync(new BiblePage(new BiblePageViewModel(item)));
+            else if (item.Stage == "Psalms")
+                await Navigation.PushAsync(new BiblePage(new BiblePageViewModel(item)));
+            else if (item.Stage == "New Testament")
+                await Navigation.PushAsync(new BiblePage(new BiblePageViewModel(item)));
+            else
+                await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
 
             // Manually deselect item.
             ItemsListView.SelectedItem = null;
